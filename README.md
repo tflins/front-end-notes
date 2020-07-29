@@ -1,5 +1,7 @@
 # front-end-notes
 
+![前端知识体系](https://tflins.oss-cn-beijing.aliyuncs.com/blog/%E6%9E%84%E5%BB%BA%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB.png?Expires=1596034808&OSSAccessKeyId=TMP.3KhfJPoqcxvAffeqdENA6JdQLqm65ErgaK4eyFJZiAs4svsMa33L6bo9DF6Lco7EHxM5JJ2S5vL86NSSgcNVXDFnSbp4kD&Signature=7z8NUBRmgk3sYHfgFe1T7n6%2BmLY%3D)
+
 前端技术，日新月异，尽早建立自己的前端知识体系。
 
 ---
