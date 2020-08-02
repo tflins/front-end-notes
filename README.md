@@ -21,8 +21,8 @@
   - [作用域链](https://github.com/tflins/front-end-notes/blob/master/doc/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/JavaScript/%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E9%97%AD%E5%8C%85/%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE.md)
   - [闭包](https://github.com/tflins/front-end-notes/blob/master/doc/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/JavaScript/%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E9%97%AD%E5%8C%85/%E9%97%AD%E5%8C%85.md)
 - this/bind/apply/call
-  - [JavaScript 中的 this]()
-  - [如何改变 this 指向]()
-  - [apply 和 apply、bind 的区别]()
-  - [如何实现 apply、call]()
-  - [如何实现 bind]()
+  - JavaScript 中的 this
+  - 如何改变 this 指向
+  - apply 和 apply、bind 的区别
+  - 如何实现 apply、call
+  - 如何实现 bind
