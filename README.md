@@ -1,8 +1,8 @@
-# front-end-notes
+# tflin 的前端知识体系
+
+万丈高楼平地起，稳扎稳打，构建自己的前端知识体系。
 
 ![构建前端知识体系.png](http://ww1.sinaimg.cn/large/006iQgpIgy1ghctgcdg48j30yf10edjm.jpg)
-
-前端技术，日新月异，尽早建立自己的前端知识体系。
 
 ---
 
