@@ -26,3 +26,9 @@
   - apply 和 apply、bind 的区别
   - 如何实现 apply、call
   - 如何实现 bind
+- 原型、继承
+  - JavaScript new 操作符的过程
+  - 实现 new 操作符
+  - JavaScript 的原型介绍
+  - 原型链是什么
+  - 如何实现继承
