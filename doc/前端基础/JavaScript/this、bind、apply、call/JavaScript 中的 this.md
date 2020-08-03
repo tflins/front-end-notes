@@ -26,3 +26,41 @@ console.log(this.a === window.a) // true
 
 console.log(a, this.a, window.a) // 1 1 1
 ```
+
+## 函数执行上下文中的 this
+
+在函数内部的 this 指向，取决于函数调用的方式。
+
+### 直接调用
+
+在非严格模式下，this 指向全局对象
+
+```js
+function fn() {
+  console.log(this === window) // true
+  console.log(this) // Window {TEMPORARY: 0, PERSISTENT: 1, Symbol(Symbol.toStringTag): "Window", constructor: ƒ}
+}
+fn() // true
+```
+
+在严格模式下，如果 this 没有被执行环境定义，则保持为 `undefined`，如以下代码，第一个例子中的全局函数是直接调用则 this 为 undefined，第二个例子全局对象作为 window 对象的方法调用，则 this 为 window。
+
+```js
+function fn() {
+  'use strict'
+
+  console.log(this === window) // false
+  console.log(this) // undefined
+}
+fn()
+```
+
+```js
+function fn() {
+  'use strict'
+
+  console.log(this === window) // true
+  console.log(this) // Window {TEMPORARY: 0, PERSISTENT: 1, Symbol(Symbol.toStringTag): "Window", constructor: ƒ}
+}
+window.fn()
+```
