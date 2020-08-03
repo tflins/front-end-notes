@@ -6,7 +6,7 @@
 
 在 MDN 中这样解释 this
 
-> 在绝大多数情况下，函数的调用方式决定了this的值。
+> 在绝大多数情况下，函数的调用方式决定了 this 的值。
 
 可以这样理解，在 JavaScript 中 this 的指向是调用时决定的，而不是在创建时决定的。如此一来，JavaScript 的 this 指向具有一定的迷惑性，简而言之，JavaScript 的 this 具有运行时绑定的特性。
 
@@ -64,3 +64,53 @@ function fn() {
 }
 window.fn()
 ```
+
+### 作为对象的方法调用
+
+当函数作为对象的方法调用时，函数的 this 是调用该函数的对象。
+
+如下列代码，fn 作为对象 obj 的一个方法来调用，this 的指向便是调用这个方法的对象 obj。
+
+```js
+var value = 1943
+
+const obj = {
+  value: 1997,
+  fn: function () {
+    console.log(this.value) // 1997
+  }
+}
+
+obj.fn()
+```
+
+但值得一提的是，下列代码中的 fn 函数又被赋值给 fn2，fn2 直接调用，this 指向 window（浏览器中），所以打印的值为 1943
+
+```js
+var value = 1943
+
+const obj = {
+  value: 1997,
+  fn: function () {
+    console.log(this.value) // 1997
+  }
+}
+
+const fn2 = obj.fn
+fn2()
+```
+
+## call()、apply()
+
+使用 call() 或 apply() 方法改变函数的执行上下文，函数的 this 指向为传入的执行上下文。
+
+```js
+
+
+```
+
+## bind()
+
+## 构造函数
+
+## 箭头函数
