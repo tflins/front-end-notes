@@ -12,6 +12,17 @@
 
 ---
 
-## 全局上下文中的 this
+## 全局执行上下文中的 this
 
-全局上下文中的 this 指向全局对象。
+全局执行上下文（任何函数外部）中的 this 指向全局对象。
+
+```js
+// 在浏览器中全局执行上下文是 window 对象
+console.log(this === window) // true
+
+this.a = '1997'
+
+console.log(this.a === window.a) // true
+
+console.log(a, this.a, window.a) // 1 1 1
+```
