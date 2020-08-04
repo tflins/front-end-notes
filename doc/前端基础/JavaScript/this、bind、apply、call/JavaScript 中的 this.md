@@ -185,5 +185,13 @@ obj.fn() // 0
 当函数作为 DOM 的事件处理函数时，this 指向触发这个事件的 DOM 元素。
 
 ```js
+const $div = document.createElement('div')
+$div.setAttribute('id', 1997)
 
+$div.addEventListener('click', function() {
+  console.log(this) // <div id="1997></div>
+  console.log(this.getAttribute('id')) // 1997
+})
+
+$div.click()
 ```
