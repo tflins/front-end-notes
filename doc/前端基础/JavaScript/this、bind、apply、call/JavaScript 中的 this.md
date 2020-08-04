@@ -105,12 +105,85 @@ fn2()
 使用 call() 或 apply() 方法改变函数的执行上下文，函数的 this 指向为传入的执行上下文。
 
 ```js
+var value = 100
 
+var Person = {
+  value: 200
+}
 
+function fn() {
+  console.log(this.value)
+}
+
+fn() // 100
+fn.call(Person) // 200
+fn.apply(Person) // 200
 ```
 
 ## bind()
 
+使用 bind() 方法改变 this 的指向，和 call()、apply() 类似，使用 bind 绑定 this 的函数，this 永远指向 bind 方法绑定的第一个参数，无论何时调用。
+
+```js
+function fn() {
+  console.log(this.value)
+}
+var fn2 = fn.bind({
+  value: 100
+})
+var obj = {
+  value: 200,
+  fn: fn2
+}
+fn2() // 100
+obj.fn() // 100
+```
+
 ## 构造函数
 
+作为构造函数，this 永久绑定在正在构造的对象上。
+
+```js
+function Person() {
+  this.age = 18
+}
+const p = new Person()
+
+console.log(p.age) // 18
+```
+
 ## 箭头函数
+
+箭头函数没有自己的 this ，其 this 指向外层非箭头函数的一个执行环境。
+
+在 MDN 中有这样的描述：
+
+> 箭头函数会捕获其所在上下文的this值，作为自己的this值。
+
+可以这样理解：箭头函数没有 this，在箭头函数中使用 this 将会沿着作用域链寻找 this。
+
+```js
+(() => {
+  // 浏览器中
+  console.log(this === window) // true
+})()
+
+var value = 0
+
+var obj = {
+  value: 1,
+  fn: () => {
+    console.log(this.value)
+  }
+}
+
+obj.fn() // 0
+```
+
+## 作为一个 DOM 事件处理函数
+
+当函数作为 DOM 的事件处理函数时，this 指向触发这个事件的 DOM 元素。
+
+```js
+
+```
