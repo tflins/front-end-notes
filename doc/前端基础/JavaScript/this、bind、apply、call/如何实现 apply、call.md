@@ -2,9 +2,13 @@
 
 ---
 
+## apply 规范
+
 ## 实现 apply
 
 ### 第一版本 借助 call 或 bind
+
+借助原生提供的 call、bind 方法来改变函数的 this 指向，这种方式比较简单
 
 ```js
 // 借助 call
@@ -29,3 +33,5 @@ function fn(a, b) {
 fn.apply2(obj, [1, 2]) // 3 100
 fn.apply3(obj, [1, 2]) // 3 100
 ```
+
+### 第二版本 
