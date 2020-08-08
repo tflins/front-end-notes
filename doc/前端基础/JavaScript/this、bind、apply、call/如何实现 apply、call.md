@@ -34,4 +34,14 @@ fn.apply2(obj, [1, 2]) // 3 100
 fn.apply3(obj, [1, 2]) // 3 100
 ```
 
-### 第二版本 
+### 第二版本
+
+在传入的执行山下文对象（content）中动态创建一个属性，这个属性指向函数，再调用刚才 content 中创建的方法，这样 this 就会执行调用该方法的对象，也就是传入的 content。JavaScript 中的 this 指向具体参考: [JavaScript 中的 this](https://github.com/tflins/front-end-notes/blob/master/doc/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/JavaScript/this%E3%80%81bind%E3%80%81apply%E3%80%81call/JavaScript%20%E4%B8%AD%E7%9A%84%20this.md)
+
+```js
+Function.prototype.apply2 = function(content = window, args = []) {
+  content.fn = this
+  const result = content.fn(...args)
+  return result
+}
+```
