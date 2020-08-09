@@ -95,3 +95,24 @@ function fn(a, b) {
 fn.call2(obj, a, b) // 3 100
 fn.call3(obj, a, b) // 3 100
 ```
+
+### 第二个版本 call
+
+```js
+Function.prototype.call2 = function(content = window, ...args) {
+  content.fn = this
+  return content.fn(...args)
+}
+```
+
+### 第三个版本 call
+
+```js
+Function.prototype.call2 = function(content = window, ...args) {
+  const fn = Symbol('fn')
+  content[fn] = this
+  const result = content[fn](...args)
+  delete content[fn]
+  return result
+}
+```
