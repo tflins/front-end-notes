@@ -62,3 +62,36 @@ Function.prototype.apply2 = function(content = window, args = []) {
   return result
 }
 ```
+
+## 实现 call
+
+call 和 apply 类似，只是 call 接收的参数不同。bind 和 apply 第一个参数都是传入的执行上下文，而其余的函数参数，apply 是以参数数组的形式从第二个参数传入；call 则是第二个参数开始已参数的形式传入。
+
+### 第一个版本：借助 apply 或 bind
+
+```js
+// 借助 apply
+Function.prototype.call2 = function(content = window, ...args) {
+  return this.apply(content, args)
+}
+
+// 借助 bind
+Function.prototype.call3 = function(content = window, ...args) {
+  return this.bind(content, ...args)()
+}
+
+const obj = {
+  a: 100
+}
+
+const a = 1
+const b = 2
+
+function fn(a, b) {
+  console.log(a + b)
+  console.log(this.a)
+}
+
+fn.call2(obj, a, b) // 3 100
+fn.call3(obj, a, b) // 3 100
+```
