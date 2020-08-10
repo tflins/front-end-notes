@@ -74,3 +74,20 @@
 - 组件通信
 - 状态管理
 - vue diff 算法
+
+## 前端工程化
+
+### webpack
+
+- webpack 是什么
+- webpack 的构建流程
+- loader 和 plugin
+- webpack 层面如何做性能优化
+- 介绍一下 webpack 的 dll
+
+### babel
+
+- babel 的工作原理
+- 介绍一下 AST
+
+## 性能优化
