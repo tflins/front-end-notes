@@ -69,7 +69,7 @@
   - 什么是 mvvm
   - 对 mvvm 的理解
 - vue 双向绑定的原理
-- vue 的生命周期
+- [vue 的生命周期](https://ustbhuangyi.github.io/vue-analysis/v2/components/lifecycle.html#beforecreate-created)
 - $nextTick 的原理
 - 组件通信
 - 状态管理
