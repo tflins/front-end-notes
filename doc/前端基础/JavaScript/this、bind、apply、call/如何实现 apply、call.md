@@ -109,6 +109,9 @@ Function.prototype.call2 = function(content = window, ...args) {
 
 ```js
 Function.prototype.call2 = function(content = window, ...args) {
+  if (typeof this !== 'function') {
+    throw new Error(`${this} not a function`)
+  }
   const fn = Symbol('fn')
   content[fn] = this
   const result = content[fn](...args)
