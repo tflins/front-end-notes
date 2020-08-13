@@ -4,11 +4,13 @@ new 操作符可以把一个构造函数实例化成一个对象。
 
 ---
 
-new 操作符到底做了什么？
+## new 操作符到底做了什么
 
 1. 创建一个空对象（即 `{}`）且构造函数的 this 对象引用该对象，同时继承了该函数的原型。
 2. 方法和属性被加入到 this 引用的对象中。
 3. 如果该函数没有返回对象，则返回 this。
+
+## 实现
 
 ```js
 function newFn(fn, ...args) {
@@ -24,3 +26,9 @@ function newFn(fn, ...args) {
   return result instanceof Object ? result : obj
 }
 ```
+
+## 相关链接
+
+- [new 运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new)
+- [重学 JS 系列：聊聊 new 操作符](https://juejin.im/post/6844903789070123021)
+- [手写代码/new.js](https://github.com/tflins/front-end-review/blob/master/%E6%89%8B%E5%86%99%E4%BB%A3%E7%A0%81/new.js)
