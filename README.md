@@ -27,7 +27,7 @@
   - [如何实现 apply、call](https://github.com/tflins/front-end-notes/blob/master/doc/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/JavaScript/this%E3%80%81bind%E3%80%81apply%E3%80%81call/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%20apply%E3%80%81call.md)
   - [如何实现 bind](https://github.com/tflins/front-end-notes/blob/master/doc/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/JavaScript/this%E3%80%81bind%E3%80%81apply%E3%80%81call/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%20bind.md)
 - 原型、继承
-  - JavaScript new 操作符的过程
+  - [JavaScript new 操作符的过程](https://s0developer0mozilla0org.icopy.site/en-US/docs/Web/JavaScript/Reference/Operators/new)
   - [实现 new 操作符](https://github.com/tflins/front-end-notes/blob/master/doc/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/JavaScript/%E5%8E%9F%E5%9E%8B%E3%80%81%E7%BB%A7%E6%89%BF/%E5%AE%9E%E7%8E%B0%20new%20%E6%93%8D%E4%BD%9C%E7%AC%A6.md)
   - JavaScript 的原型介绍
   - 原型链是什么
