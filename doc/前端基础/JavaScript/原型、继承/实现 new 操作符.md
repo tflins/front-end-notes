@@ -27,6 +27,8 @@ function newFn(fn, ...args) {
 }
 ```
 
+通过构造函数实例化出来的对象，可以访问到构造函数的原型对象，所以使用 `Object.setPrototype` 将两者联系起来。`Object.setPrototypeOf(obj, fn.prototype)` 等同于 `obj.__proto__ = fn.prototype`。之所以不这么做，是因为通常认为 `Object.setPrototype` 比直接使用 `Object.prototype.__proto__` 更安全。
+
 ## 相关链接
 
 - [new 运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new)
