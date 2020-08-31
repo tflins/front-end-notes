@@ -91,3 +91,12 @@
 - 介绍一下 AST
 
 ## 性能优化
+
+## 计算机网络
+
+### http/https
+
+- http 常见的状态码
+- http 缓存策略
+- http 常见方法
+- keep-alive
