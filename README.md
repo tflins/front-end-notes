@@ -68,8 +68,8 @@
 - mvvm
   - 什么是 mvvm
   - 对 mvvm 的理解
-- vue 运行的整体流程
-- new vue 做了什么
+- [vue 运行的整体流程](https://github.com/tflins/front-end-notes/blob/master/doc/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/vue/vue%20%E8%BF%90%E8%A1%8C%E7%9A%84%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B.md)
+- [new vue 做了什么](https://github.com/tflins/front-end-notes/blob/master/doc/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/vue/new%20vue%20%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88.md)
 - vue 双向绑定的原理
 - [vue 的生命周期](https://ustbhuangyi.github.io/vue-analysis/v2/components/lifecycle.html#beforecreate-created)
 - $nextTick 的原理
