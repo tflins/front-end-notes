@@ -18,7 +18,7 @@ Runtime + compiler 版本就会在运行时编译，比如你需要将 `template
 
 ## compiler
 
-vue 2.x 版本中，template 会被编译成 render 函数，运行 runder 函数得到 vDom。
+vue 2.x 版本中，template 会被编译成 render 函数，运行 runder 函数得到 vNode。
 
 编译可以分为 3 个阶段：`parse`、`optimize`、`generate`。
 
@@ -28,4 +28,8 @@ vue 2.x 版本中，template 会被编译成 render 函数，运行 runder 函�
 
 `generate` 阶段会将 AST 转换成可执行的 JavaScript 代码，也就是 render 函数。
 
-这样经过 `parse` -> `optimeze` -> `generate` 3 个阶段，就可以将 template 编译成获取 vDom 所需的 render 函数了。
+这样经过 `parse` -> `optimeze` -> `generate` 3 个阶段，就可以将 template 编译成获取 vNode 所需的 render 函数了。
+
+## vDom（虚拟 dom）
+
+虚拟 dom，就是一颗以 vNode 为节点的数，vNode 是一个以 JavaScript 对象的形式来描述真实 dom 节点的对象，是对真实 dom 的抽象。真实 dom 所包含的信息太多，操作真实 dom 需要昂贵的代价，而将真实 dom 抽象成 vNode，在内存中操作 vNode 最后再映射到真实 dom 上，可以极大程度的提高性能，并且可以实现跨平台，如在 weex 、node 或 浏览器中运行。
