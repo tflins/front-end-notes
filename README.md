@@ -53,10 +53,7 @@
 
 - [position](https://developer.mozilla.org/zh-CN/docs/Web/CSS/position)
 - 行内元素/块状元素
-- 盒模型
-  - 什么是盒模型
-  - 如何改变盒模型
-  - 各个盒模型的好处
+- [盒模型](https://github.com/tflins/front-end-notes/blob/master/doc/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/CSS/%E7%9B%92%E6%A8%A1%E5%9E%8B.md)
 - BFC/IFC
 - 外边距合并
 - 居中和常用布局
